@@ -9,7 +9,7 @@
         <h1>Age Calculator</h1>
         <form action="age" method="POST">
             <label> Enter your age:</label>
-            <input type="number" id="age" name="age" value="">
+            <input type="number" id="ageInput" name="ageInput" value="<%= request.getAttribute("ageInput") %>">
             <br>
             <button type="submit"><strong>Age Next Birthday</strong></button>
             
