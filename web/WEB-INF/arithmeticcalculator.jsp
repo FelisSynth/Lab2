@@ -9,10 +9,10 @@
         <h1>Arithmetic Calculator</h1>
         <form action="arithmetic" method="POST">
             <label> First:</label>
-            <input type="number" id="first" name="first" value="">
+            <input type="number" id="first" name="first" value="<%= request.getAttribute("first") %>">
             <br>
             <label> Second:</label>
-            <input type="number" id="second" name="second" value="">
+            <input type="number" id="second" name="second" value="<%= request.getAttribute("second") %>">
             <br>
             <button type="submit" name="operation" value="+">+</button>
             <button type="submit" name="operation" value="-">-</button>
